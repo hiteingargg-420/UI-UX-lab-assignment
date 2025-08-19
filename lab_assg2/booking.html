@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency - Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="packages.html">Packages</a>
+    <a href="booking.html">Booking</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About Us</a>
+  </nav>
+<div class="m">
+  <h1>Book Your Holiday</h1>
+  <form>
+    <label>Name: <input type="text" name="name" required></label><br><br>
+    <label>Email: <input type="email" name="email" required></label><br><br>
+    <label>Travel Dates: <input type="date" name="start"> to <input type="date" name="end"></label><br><br>
+    <label>Destination:
+      <select name="destination">
+        <option>Goa</option>
+        <option>Manali</option>
+        <option>Rajasthan</option>
+        <option>Kerala</option>
+      </select>
+    </label><br><br>
+    <label>Package Type:
+      <input type="radio" name="package" value="standard"> Standard
+      <input type="radio" name="package" value="luxury"> Luxury
+    </label><br><br>
+    <label>Additional Requests:<br>
+      <textarea rows="4" cols="40" name="requests"></textarea>
+    </label><br><br>
+    <button class="s" type="submit">Submit Booking</button>
+  </form>
+</div>
+</body>
+</html>
