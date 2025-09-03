@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overlay Demo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      overflow: hidden;
+    }
+
+    /* Yellow Shape Top-Left */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60%;
+      height: 100%;
+      background: #FFD54F;
+      clip-path: circle(65% at 0% 0%);
+      z-index: -1;
+    }
+
+    /* Teal Shape Bottom-Right */
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 60%;
+      height: 100%;
+      background: #80DEEA;
+      clip-path: ellipse(70% 50% at 100% 100%);
+      z-index: -1;
+    }
+
+    /* Uplifted White Card */
+    .card {
+      background: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      max-width: 450px;
+      text-align: left;
+      animation: floatUp 1s ease-out;
+    }
+
+    /* Floating Animation */
+    @keyframes floatUp {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .card h1 {
+      font-size: 2.5rem;
+      color: #004d40;
+    }
+
+    .card p {
+      margin: 20px 0;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #ff9800;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e68900;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="card">
+      <h1>Creative Idea</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Sed eget libero feugiat, faucibus libero id, scelerisque quam.
+      </p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </section>
+</body>
+</html>

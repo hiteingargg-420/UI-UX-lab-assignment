@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  color:#003366;
+}
+
+header {
+  padding-left: 15px;
+  padding-top: 15px;
+  text-align: left;
+  font-weight:bold;
+  color:#003366;
+  margin:0;
+}
+
+nav {
+  padding: 10px;
+  align-items:center;
+  display:flex;
+  justify-content:space-between;
+}
+.para{
+  font-weight:bold;
+  display:inline-block;
+  text-align: left;
+  margin-left:5px;
+  color:#003366;
+}
+nav a {
+  display: inline-block;
+      margin: 10px;
+      padding: 8px 15px;
+      text-decoration: none;
+      color: #003366;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      position: relative;
+      font-weight:bold;
+      text-align: right;
+}
+
+nav a:hover {
+  text-decoration: none;
+  background-color:#003366;
+  color:#fff;
+  box-shadow: 0 0 15px #003366;
+
+}
+
+.container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  width:100%;
+  max-width:1200px;
+  text-align: left;
+  animation: floatUp 1s ease-out;
+  flex:1;
+  margin: 20px auto;
+}
+
+.btn {
+  margin-top:25px;
+  margin-left:500px;
+  display: inline-block;
+  padding: 12px 24px;
+  background: #ff9800;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #e68900;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+h1, h2, h3 {
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #0055a5;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #003366;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  height:200px;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #003366;
+  color: white;
+  margin-top:20px;
+}
+
+footer a{
+    color:#fff;
+}
+
+footer img{
+    width:25px;
+    vertical-align:-4px;
+}
+h3{
+  margin-top:20px;
+}
+
+.heading{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
