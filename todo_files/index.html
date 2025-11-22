@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+
+    <form id="taskForm" onsubmit="return false;">
+      <input id="titleInput" type="text" placeholder="Task title" required />
+      <button id="addBtn" class="primary" type="button">Add Task</button>
+      <textarea id="descInput" class="full" placeholder="Task description (optional)"></textarea>
+      <div class="full small">Enter title and description, then click <strong>Add Task</strong>.</div>
+    </form>
+
+    <div id="taskList" class="task-list" aria-live="polite"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

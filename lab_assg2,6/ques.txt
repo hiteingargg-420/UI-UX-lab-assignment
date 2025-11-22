@@ -1,0 +1,9 @@
+Create a multipage website for a travel agency with following pages:
+ Home page with an introduction and banner image
+ Packages page with tour package details in a table
+ A booking form (name, dates, destination, package selection)
+ Gallery page with destination images and captions
+ About Us or Contact Us page with social media links
+Use table to show packages with price, duration, destination, booking form with multiple
+inputs and dropdowns, list of travel tips or must-visit places, embedded images with proper
+attributes and styling for layout.
